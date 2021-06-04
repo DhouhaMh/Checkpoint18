@@ -1,38 +1,122 @@
-.App {
+.App{
+  background-color: #222831;
+}
+
+
+/* HEADER  */
+
+header{
+  border-bottom: 1px solid rgba(240, 231, 231, 0.117);
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bolder;
+  background-color: #222831;
+  position: sticky;
+  top:0;
+  z-index: 200;
+  pad: 0 100px;
+  padding-top: 5px;
+  padding-bottom: 10px;
+
+}
+.text{
+  color: #0a81ab;
   text-align: center;
 }
+.nav-menu{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+  padding-bottom: 20px;
+}
+.search-rate{
+  display: flex;
+  flex-direction: row;
+  margin: 20px 30px;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+}
+.search{
+  border: 1px solid rgba(0, 0, 0, 0.117);
+  border-radius: 5px;
+}
+.btn-search{
+  border: 1px solid rgba(0, 0, 0, 0.117);
+  border-radius: 5px;
+  background-color: seagreen;
+  color: white;
+  margin-left: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.btn-search:hover{
+  cursor: pointer;
+  background-color: cadetblue;
+  color: black;
+
+}
+.btn-add{
+  background-color: seagreen;
+    display: flex;
+    margin: 50px 100px;
+    border: 1px solid rgba(0, 0, 0, 0.117);
+    border-radius: 10px;
+    height: 38px;
+    width: 200px;
+    font-size: large;
+    padding-left: 25px;
+    font-family: 'Courier New', Courier, monospace;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.add-movie-modal{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* Movies's Cards */
+
+.allCards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px 20px;
+    
+}
+.cardStyle{
+  text-align: center;
+    padding: 10px 10px;
+    margin: 10px 10px;
+    box-shadow: 0px 0px 50px -25px rgba(0, 0, 0, 0.5);
+
+}
+.img{
+  height: 60%;
+}
+.linkDescription{
+  color: cadetblue;
+  text-decoration: underline;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Star Rating */
+
+.star {
+    cursor: pointer;
+    font-size: 180%;
+    transition: color 200ms;
+   
   }
-  to {
-    transform: rotate(360deg);
+  .stars{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: x-large;
+
   }
+
+.inp-star[type="radio"]{
+  display: none;
+}
+.star-btn{
+  color: "#ffee07";
+  
 }
