@@ -34,7 +34,7 @@ const DescriptionCard = (props) => {
                             moviesData
                         }
                         }}>
-                <button className="btn draw-border">Watch Trailer</button>
+                <button className="btn-trailer draw-border">Watch Trailer</button>
             </Link>
             <br/>
         </div>
