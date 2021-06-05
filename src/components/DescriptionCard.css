@@ -107,7 +107,7 @@
     transition-delay: 0s, 0.25s, 0s;
   }
   
-  .btn {
+  .btn-trailer {
     background: none;
     border: none;
     cursor: pointer;
@@ -119,7 +119,7 @@
     width: 13rem;
   }
   
-  .btn:focus {
+  .btn-trailer:focus {
     outline: 2px dotted #55d7dc;
   }
   .video-display{
